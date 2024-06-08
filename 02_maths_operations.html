@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    }
+
+    input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    }
+
+    button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    }
+
+    button:hover {
+    background-color: #45a049;
+    }
+
+    .answer {
+    color: blue;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Maths Operations</h1>
+      
+        <label for="first-number">Enter 1st number:</label>
+        <input type="text" id="first-number" value="23"><br>
+      
+        <label for="second-number">Enter 2nd number:</label>
+        <input type="text" id="second-number" value="32"><br>
+      
+        <button onclick="add()">+</button>
+        <button onclick="subtract()">-</button>
+        <button onclick="multiply()">*</button>
+        <button onclick="divide()">/</button>
+        <button onclick="modulus()">%</button>
+      
+        <p class="answer">Answer is : <span id="result"></span></p>
+      </div>
+      
+      <script>
+      function add() {
+        let num1 = document.getElementById("first-number").value;
+        let num2 = document.getElementById("second-number").value;
+        let result = parseInt(num1) + parseInt(num2);
+        document.getElementById("result").innerHTML = result;
+      }
+      
+      function subtract() {
+        let num1 = document.getElementById("first-number").value;
+        let num2 = document.getElementById("second-number").value;
+        let result = parseInt(num1) - parseInt(num2);
+        document.getElementById("result").innerHTML = result;
+      }
+      
+      function multiply() {
+        let num1 = document.getElementById("first-number").value;
+        let num2 = document.getElementById("second-number").value;
+        let result = parseInt(num1) * parseInt(num2);
+        document.getElementById("result").innerHTML = result;
+      }
+      
+      function divide() {
+        let num1 = document.getElementById("first-number").value;
+        let num2 = document.getElementById("second-number").value;
+        let result = parseInt(num1) / parseInt(num2);
+        document.getElementById("result").innerHTML = result;
+      }
+      
+      function modulus() {
+        let num1 = document.getElementById("first-number").value;
+        let num2 = document.getElementById("second-number").value;
+        let result = parseInt(num1) % parseInt(num2);
+        document.getElementById("result").innerHTML = result;
+      }
+      </script>
+</body>
+</html>
