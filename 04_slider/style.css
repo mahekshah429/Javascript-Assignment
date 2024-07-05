@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(53, 50, 50);
 }
 
 h1 {
@@ -84,31 +84,31 @@ u{
 /* ---------------------------------------------------------------------------- */
 
 .b1 {
-    background-color: red;
+    background-color: crimson;
 }
 
 .b2 {
-    background-color: darkgreen;
+    background-color: blueviolet;
 }
 
 .b3 {
-    background-color: darkblue;
+    background-color: darkgreen;
 }
 
 .b4 {
-    background-color: darkorange;
+    background-color: darkturquoise;
 }
 
 .b5 {
-    background-color: darkmagenta;
+    background-color:deeppink;
 }
 
 .b6 {
-    background-color: darkgray;
+    background-color: darkred;
 }
 
 .b7 {
-    background-color: darkturquoise;
+    background-color: darkgoldenrod;
 }
 
 .box:nth-child(4n + 1) {
